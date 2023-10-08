@@ -8,6 +8,11 @@ int
 main(int argc, char *argv[])
 {
   int i = 5;
+  GPS_DD gps_Home_Woodland { 38.672215864622636, -121.72280111121437 };
+  //something you CANNOT DO!! vv (see GPS_DD definition)
+  //... access gps_Home_Woodland.latitude
+  //why? latitude is a private variable
+  GPS_DD gps_TLC_UCDavis   { 38.53874868013882,  -121.7542091083306 };
 
   // bracket initialization
   GPS_DD gps_Home_Woodland { 38.672215864622636, -121.72280111121437 };
